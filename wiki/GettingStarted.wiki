@@ -29,7 +29,8 @@ Run wsdlc on the WSDL you have downloaded:
    - <jar.file> is the name of the output jar file that wsdlc generates
    - You can include an optional argument: -Dpackage-prefix=<myprefix>
 
-Step 2. Write your client application. For example, the following code creates a new SObject:
+== Write application code ==
+Write your client application. For example, the following code creates a new Account using partner API:
 
 {{{
 
