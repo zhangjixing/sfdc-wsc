@@ -7,7 +7,10 @@ literal wrapped web service.
 
 = Building WSC from soruce = 
 
-Checkout 
+* Download source code from:
+     http://code.google.com/p/sfdc-wsc/source/checkout
+
+* cd to dist directory.
 
 
 To build wsc.jar, run the following ant target:
