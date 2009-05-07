@@ -5,23 +5,23 @@ implemented using a streaming parser. WSC also makes it much easier to use the F
 API (Web Services/SOAP or Asynchronous/REST API).  WSC can be used to invoke any doc 
 literal wrapped web service.
 
-= Building WSC from soruce = 
+== Building WSC from soruce == 
 
-* Download source code from:
+1. Download source code from:
      http://code.google.com/p/sfdc-wsc/source/checkout
 
-* cd to dist directory.
+2. cd to dist directory.
+
+3. ant all
+
+This should generate wsc.jar file.
 
 
-To build wsc.jar, run the following ant target:
+== Generating stub from wsdl == 
 
-./ant build wsc.jar
+Run wsdlc on the WSDL you have downloaded:
 
-Quickstart
-
-Step 1. Run wsdlc on a WSDL you have downloaded:
-
-   java -jar wsc.jar <wsdl> <jar.file>
+   java -classpath wsc.jar com.sforce.ws.tools.wsdlc <wsdl> <jar.file>
 
    - <wsdl> is the name of the WSDL file
    - <jar.file> is the name of the output jar file that wsdlc generates
