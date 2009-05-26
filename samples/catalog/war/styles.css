@@ -1,0 +1,84 @@
+#canvas {
+	width: 778px;
+	margin: 15 auto auto auto;
+	height: 765px;
+	background-color: #f0ece3;
+	background-image: url(images/chair_back.png);
+	background-repeat: no-repeat;
+	background-position: bottom right;
+	border: 1px solid #7e624e;
+}
+#content {
+	position: absolute;
+	margin-top: 10px;
+	margin-left: 286px;
+	width: 491px;
+	height: 724px;
+	background-color: #ffffff;
+	border: 1px solid #7e624e;
+	
+}
+#topnav {
+	position: absolute;
+	margin-top: 10px;
+	margin-left: 20px;
+	font-family: tahoma;
+	font-size: 8pt;
+	color: #d39340;
+}
+#topnav img {
+	margin-bottom: 2px;
+}
+#topnav a {
+	color: #d39340;
+	text-decoration: none;
+}
+#sign {
+	float: left;
+	margin-top: 50px;
+	margin-left: 20px;
+}
+#leftnav {
+	position: absolute;
+	margin-top: 250px;
+
+}
+#leftnav li {
+	width: 225px;
+	height: 22px;
+	list-style-type: none;
+	background-image: url(images/leftnavback.png);
+	background-repeat: no-repeat;
+	padding-left: 30px;
+	padding-top: 3px;
+	font-family: tahoma;
+	font-size: 8pt;
+	color: #521200;
+}
+#leftnav a {
+	color: #521200;
+	text-decoration: none;
+}
+#leftnav li:hover {
+	background-image: url(images/leftnavbackover.png);
+}
+.contentBlock {
+	margin: 15px;
+}
+.headBar {
+}
+.head {
+	color: #521200;
+	font-size: 14pt;
+	height: 35px;
+	padding-top: 8px
+}
+.contentBody {
+	color: #666666;
+	font-family: tahoma;
+	font-size: 8pt;
+}
+.contentBody a {
+	color: #d39340;
+	font-weight: bold;
+}
