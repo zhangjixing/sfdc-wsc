@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE web-app PUBLIC
+ "-//Sun Microsystems, Inc.//DTD Web Application 2.3//EN"
+ "http://java.sun.com/dtd/web-app_2_3.dtd">
+
+<web-app xmlns="http://java.sun.com/xml/ns/javaee" version="2.5">
+	
+	<context-param>
+		<param-name>salesforce.username</param-name>
+		<param-value>api@stratus.com</param-value>
+	</context-param>
+	
+	<context-param>
+		<param-name>salesforce.password</param-name>
+		<param-value>u4eCFk1Qwqi9akHJU8CPTCKb3aXMurWP</param-value>
+	</context-param>
+
+	<servlet>
+    	<servlet-name>CatalogServlet</servlet-name>
+    	<servlet-class>com.stratus.estore.servlet.CatalogServlet</servlet-class>
+  	</servlet>
+  	
+  	<servlet>
+  		<servlet-name>MoreInfoServlet</servlet-name>
+  		<servlet-class>com.stratus.estore.servlet.MoreInfoServlet</servlet-class>
+  	</servlet>
+  	
+  	<servlet>
+    	<servlet-name>InquiryServlet</servlet-name>
+    	<servlet-class>com.stratus.estore.servlet.InquiryServlet</servlet-class>
+  	</servlet>
+
+	<servlet-mapping>
+    	<servlet-name>CatalogServlet</servlet-name>
+		<url-pattern>/catalog.html</url-pattern>
+	</servlet-mapping>
+	
+	<servlet-mapping>
+		<servlet-name>MoreInfoServlet</servlet-name>
+		<url-pattern>/moreinfo.html</url-pattern>
+	</servlet-mapping>
+	
+	<servlet-mapping>
+		<servlet-name>InquiryServlet</servlet-name>
+		<url-pattern>/inquiry</url-pattern>
+	</servlet-mapping>
+	
+	<welcome-file-list>
+		<welcome-file>index.html</welcome-file>
+	</welcome-file-list>
+</web-app>
