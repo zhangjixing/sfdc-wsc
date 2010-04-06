@@ -6,12 +6,12 @@ This page shows how to use WSC from GAE.
 
 = Details =
 
-* copy wsc-XX.jar, partner-XX.jar and wsc-gae.jar to the /war/WEB-INF/lib/ directory of the GAE war file.
+  * copy wsc-XX.jar, partner-XX.jar and wsc-gae.jar to the /war/WEB-INF/lib/ directory of the GAE war file.
 
-* Set GAE as transport for on WSC ConnectorConfig:
+  * Set GAE as transport for on WSC ConnectorConfig:
       config.setTransport(GaeHttpTransport.class);
 
-* Here is a full working example:
+  * Here is a full working example:
 
 {{{
 
