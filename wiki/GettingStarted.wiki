@@ -9,7 +9,7 @@ literal wrapped web service.
 
 You can download a pre-built WSC jar file from:
 
-http://sfdc-wsc.googlecode.com/files/wsc-16_0.jar
+http://code.google.com/p/sfdc-wsc/downloads/list
 
 == Building WSC from Source Code == 
 
@@ -45,7 +45,7 @@ Write your client application. For example, the following code creates a new Acc
               config.setUsername("username");
               config.setPassword("password");
 
-              connection = Connector.newConnection(config);
+              PartnerConnection connection = Connector.newConnection(config);
               SObject account = new SObject();
               account.setType("Account");
               account.setField("Name", "My Account");
