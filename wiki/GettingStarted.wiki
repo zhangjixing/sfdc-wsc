@@ -25,7 +25,7 @@ To compile jar files:
 2. cd to dist directory.
 
 3. run "ant all" to generate the wsc.jar file.
-    Note: This ant target compiles the jar file to run on JDK 1.6. To compile the jar file so that it can run on JDK 1.5, run "ant –DcompileTarget=1.5 all" instead of "ant all". You still need to compile with JDK 1.6.
+    Note: This ant target compiles the jar file to run on JDK 1.6. To compile the jar file so that it can run on JDK 1.5, run "`ant –DcompileTarget=1.5 all`" instead of "ant all". You still need to compile with JDK 1.6.
 
 
 == Generating Stub Code from a WSDL == 
