@@ -11,7 +11,13 @@ You can download a pre-built WSC jar file from:
 
 http://code.google.com/p/sfdc-wsc/downloads/list
 
+The pre-built jar files were generated using JDK 1.6 and only run on JDK 1.6. To build a jar file that can run on JDK 1.5, see "Building WSC from Source Code."
+
 == Building WSC from Source Code == 
+
+Prerequisite: You need JDK 1.6 to compile WSC jar files.
+
+To compile jar files:
 
 1. Download the source code from:
      http://code.google.com/p/sfdc-wsc/source/checkout
@@ -19,6 +25,7 @@ http://code.google.com/p/sfdc-wsc/downloads/list
 2. cd to dist directory.
 
 3. run "ant all" to generate the wsc.jar file.
+    Note: This ant target compiles the jar file to run on JDK 1.6. To compile the jar file so that it can run on JDK 1.5, run "ant –DcompileTarget=1.5 all" instead of "ant all". You still need to compile with JDK 1.6.
 
 
 == Generating Stub Code from a WSDL == 
